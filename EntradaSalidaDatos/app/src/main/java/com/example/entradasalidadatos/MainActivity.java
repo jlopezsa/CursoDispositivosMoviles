@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView salida;
     private EditText operador1;
     private Button boton;
-    private int numeroOperador;
+    private double numeroOperador;
 
 
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                numeroOperador = Integer.parseInt(operador1.getText().toString());
+                numeroOperador = Double.parseDouble(operador1.getText().toString());
 
                 salida.setText("El número ingresado es: " + numeroOperador);
 
