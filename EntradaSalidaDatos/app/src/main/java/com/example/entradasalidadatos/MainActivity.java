@@ -16,12 +16,17 @@ public class MainActivity extends AppCompatActivity {
     private Button boton;
     private double numeroOperador;
 
+    private TextView mensaje_inferior;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mensaje_inferior = (TextView) findViewById(R.id.textView);
+        mensaje_inferior.setText("Ejemplo de entrada y salida de datos");
 
         salida = (TextView) findViewById(R.id.txtSalida);
         operador1 = (EditText) findViewById(R.id.txtOperador1);
